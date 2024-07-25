@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="portfolio.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+<!------- Header ------->
+<header>
+    <a href="#" class="logo">Diana</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" class="top-btn">Download CV</a>
+</header>
+
+    <!------- Home ------->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hi, my name is</h3>
+            <h1>Diana Aladzic</h1>
+            <h5>Junior Front-end Developer <span>Based in London</span></h5>
+            <p>I'm a Junior Developer based in London, enthusiastic about coding <br> and eager to work on software projects.</p>
+            <div class="social">
+                <a href="#"><img src="images.portf/linkedin.png" alt="Linkedin icon"></a>
+                <a href="#"><img src="images.portf/instagram.png" alt="Instagram icon"></a>
+            </div>
+            <a href="#" class="btn">About Me</a>
+        </div>
+            <div class="img-bg">
+                <div class="home-img">
+                    <img class="cvpic" src="images.portf/CVpic.png" alt="Portrait picture">
+                </div>
+            </div>
+    </section>
+
+    <!------- About Me ------->
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About me</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit facilis animi quos reprehenderit perferendis?</p> <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam veritatis dolore eos. Quod ut ipsam iste autem optio corrupti temporibus voluptatum, dolorum debitis impedit?</p> <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid iste, aut in vel impedit facilis.</p>
+        </div>
+    </section>
+
+    <!------- Skills ------->
+    <div class="skills-heading">
+        <h2>Development Skills</h2>
+    </div>
+        
+        <section class="skills-container">
+            <!-- <div class="skills-icons"> -->
+                <div class="skill" onmouseover="showText(this)" onmouseout="hideText(this)">
+                    <img src="images.portf/html.png" alt="HTML icon"><br>
+                    <p class="skill-text">HTML</p>
+                </div>
+                <div class="skill" onmouseover="showText(this)" onmouseout="hideText(this)">
+                    <img src="images.portf/css.png" alt="CSS icon"><br>
+                    <p class="skill-text">CSS</p>
+                </div>
+                <div class="skill" onmouseover="showText(this)" onmouseout="hideText(this)">
+                    <img src="images.portf/javascript.png" alt="JavaScript icon"><br>
+                    <p class="skill-text">JavaScript</p>
+                </div>
+                <div class="skill" onmouseover="showText(this)" onmouseout="hideText(this)">
+                    <img src="images.portf/python.png" alt="Python icon"><br>
+                    <p class="skill-text">Python</p>
+                </div>
+                <div class="skill" onmouseover="showText(this)" onmouseout="hideText(this)">   
+                    <img src="images.portf/mySQL.png" alt="mySQL icon"><br>
+                    <p class="skill-text">MySQL</p>
+                </div>
+        </section>
+        
+    <!------- Projects ------->
+    
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <iframe src="https://coconut-addict.github.io/Weather-App/" width="100%" height="500px"></iframe>
+                <p>A weather application that displays weather information based on user input.</p>
+                <a href="https://github.com/coconut-addict/Weather-App" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Expense Tracker</h3>
+                <iframe src="https://coconut-addict.github.io/Expense-Tracker/" width="100%" height="500px"></iframe>
+                <p>A Python-based expense tracker to manage and track your spending.</p>
+                <a href="https://github.com/coconut-addict/Expense-Tracker" target="_blank" class="btn">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!------- Contact ------->
+    <section class="contact" id="contact">
+        <div class="container"></div>
+    </section>
+
+
+    <!------- Link to JS ------->
+    <script src="portfolio.js"></script>
+</body>
+</html>
+
