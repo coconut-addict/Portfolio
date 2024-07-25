@@ -120,7 +120,8 @@ header.sticky{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 4rem;
-    padding: 100px 32% 120px;
+    padding: 7rem 32% 7.5rem;
+    margin-top: 10rem;
 }
 
 .home-text h1{
@@ -220,8 +221,11 @@ span{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px 30%;
+    padding-top: 15rem;
+    padding-left: 30%;
+    padding-right: 30%;
     transition: .3s;
+    
 }
 
 .about-text{
@@ -246,13 +250,25 @@ span{
     font-size: var(--p-font);
 }
 
-.skills-heading{
+/* .skills-heading{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     font-size: var(--logo-font);
-    margin-top: 28rem;
+    margin-top: 20rem;
+} */
+
+.skills-section{
+    padding-top: 17rem;
+    
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: var(--h2-font);
+    margin-bottom: 40px;
+    color: var(--text-color);
 }
 
 .skill img{
@@ -265,7 +281,7 @@ span{
     height: auto;
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     flex-wrap: wrap;
 }
 
@@ -288,16 +304,13 @@ span{
     white-space: nowrap;
 }
 
-.projects-heading{
-    display: flex;
-    justify-content: center;
-    font-size: var(--logo-font);
-    padding-top: 24rem;
-}
 
 /* Projects Section */
 .projects-section {
-    padding: 400px 18%;
+    padding-top: 15rem;
+    padding-left: 18%;
+    padding-right: 18%;
+
 }
 
 .projects-section h2 {
@@ -315,8 +328,8 @@ span{
 }
 
 .project-card {
-    background: #fff;
-    border-radius: 8px;
+    background: var(--main-transparent);
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: calc(50% - 20px);
@@ -330,13 +343,14 @@ span{
 }
 
 .project-card h3 {
-    font-size: 1.5rem;
+    font-size: var(--p-font);
     color: var(--third-color);
 }
 
 .project-card p {
     margin: 15px 0;
     color: var(--third-color);
+    font-size: 1.2rem;
 }
 
 .project-card a {
@@ -357,7 +371,7 @@ span{
 
 /* Media Queries */
 
-@media (max-width: 1425px) {
+@media (max-width: 1600px) {
     header{
         padding: 16px 3%;
         transition: .3s;
@@ -370,6 +384,28 @@ span{
         padding: 70px 3%;
         transition: .3s;
     }
+}
+
+@media (max-width: 1100px){
+    #menu-icon{
+        display: block;
+    }
+    .home{
+        min-height: 80vh;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: right;
+        transition: all .40s;
+    }
+    .navlist a:hover{
+        transform: scale(0.5);
+    }
+    
 }
 
 /* Responsive design for smaller screens */
