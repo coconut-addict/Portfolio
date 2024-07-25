@@ -187,25 +187,14 @@ span{
 
 .cvpic{
     max-width: 100%;
-    width: 500px;
+    width: 31.25rem;
     height: auto;
 }
 
-/* .img-container{
-    width: 500px;
-    height: 500px;
-    background: var(--main-transparent);
-    margin: 2rem;
-    border: 10px solid var(--main-color);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    transition: background-color .4s;
-} */
 
 .img-bg{
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     border: 10px solid var(--main-color);
     border-radius: 50%;
     overflow: hidden;
@@ -332,7 +321,7 @@ span{
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: calc(50% - 20px);
+    width: 35rem;
     box-sizing: border-box;
     transition: transform 0.3s;
     text-align: center;
@@ -388,19 +377,15 @@ span{
 
 /* Media Queries */
 
-/* Media Queries */
 @media (max-width: 1200px) {
-    header {
-        padding: 20px 5%;
-    }
-
     .home {
-        padding: 80px 5%;
+        padding: 7rem 10%;
     }
 
     .about, .skills-section, .projects-section, .contact {
-        padding: 80px 5%;
+        padding: 80px 10%;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -426,28 +411,25 @@ span{
     }
 
     .home {
-        flex-direction: column;
-    }
-
-    .home .img-bg {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .home .home-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .home .cvpic {
-        width: 80%;
-        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 7rem 5%;
     }
 
     .home .home-text {
         text-align: center;
         padding: 20px;
+    }
+
+    .home .img-bg {
+        width: 20rem;
+        height: 20rem;
+        margin: 2rem 0;
+    }
+
+    .home .cvpic {
+        width: 90%;
     }
 
     .about, .skills-section, .projects-section {
@@ -466,18 +448,19 @@ span{
 
 @media (max-width: 480px) {
     .home .home-text h1 {
-        font-size: 36px;
+        font-size: 2.5rem;
     }
 
     .home .home-text h5 {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 
     .home .home-text p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .about .about-text h2, .skills-section h2, .projects-section h2, .contact h2 {
-        font-size: 28px;
+        font-size: 2rem;
     }
+    
 }
